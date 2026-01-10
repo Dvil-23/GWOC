@@ -1,0 +1,219 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, Arial, Helvetica, sans-serif;
+}
+
+.page {
+  color: #0f172a;
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  padding: 6rem 1.5rem;
+  text-align: center;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)),
+    url("./assets/icebath-hero.jpg");
+
+  background-size: cover;
+  background-position: center;
+}
+
+
+.hero h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.hero h1 span {
+  color: #0b5ed7;
+}
+
+.tagline {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #334155;
+}
+
+.hero p {
+  max-width: 680px;
+  margin: 2rem auto;
+  color: #475569;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  margin-top: 2.5rem;
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-image:
+    linear-gradient(rgba(230, 242, 251, 0.75),
+      rgba(255, 255, 255, 0.85)),
+    url("./assets/icebath-hero.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Glass card */
+.glass-card {
+  max-width: 880px;
+  width: 100%;
+  padding: 3.5rem 3rem;
+  border-radius: 24px;
+
+  background: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow:
+    0 30px 60px rgba(15, 23, 42, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+/* Keep text crisp */
+.hero-content {
+  text-align: center;
+}
+
+.hero p {
+  color: #334155;
+}
+
+
+/* Base button */
+.btn {
+  padding: 0.95rem 1.8rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  border: none;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+
+/* Primary CTA */
+.btn-primary {
+  background: #0b5ed7;
+  color: #ffffff;
+  box-shadow: 0 10px 25px rgba(11, 94, 215, 0.25);
+}
+
+.btn-primary:hover {
+  background: #094bb5;
+  transform: translateY(-1px);
+}
+
+/* Secondary CTA */
+.btn-secondary {
+  background: #ffffff;
+  color: #0b5ed7;
+  border: 1.5px solid rgba(11, 94, 215, 0.35);
+}
+
+.btn-secondary:hover {
+  background: #e6f2fb;
+}
+
+.btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(11, 94, 215, 0.25);
+}
+
+
+
+/* Features */
+.features {
+  padding: 4rem 1.5rem;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.features h2 {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-size: 2rem;
+}
+
+.feature-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.feature-card {
+  background: #f8fafc;
+  padding: 2rem;
+  border-radius: 16px;
+}
+
+.feature-card h3 {
+  margin-bottom: 0.75rem;
+}
+
+/* CTA */
+.cta {
+  background: #f0f9ff;
+  text-align: center;
+  padding: 4rem 1.5rem;
+}
+
+.cta h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.cta p {
+  color: #475569;
+  margin-bottom: 2rem;
+}
+
+.cta-link {
+  display: inline-block;
+  margin-top: 1.5rem;
+
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #000000;
+
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  text-decoration-thickness: 1.5px;
+
+  transition: opacity 0.2s ease;
+}
+
+.cta-link:hover {
+  opacity: 0.7;
+}
+
+
+/* Footer */
+.footer {
+  padding: 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #64748b;
+}
