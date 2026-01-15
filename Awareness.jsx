@@ -1,67 +1,76 @@
 import "./App.css";
+import { Link } from "react-router-dom";
 
 export default function Awareness() {
   return (
-    <main className="content-page">
-      {/* Page Header */}
+    <main className="content-page awareness-page">
+
+      {/* PAGE HEADER */}
       <section className="page-hero">
         <h1>Cold Therapy Awareness</h1>
         <p>
-          Evidence-based education on cold immersion, recovery science,
-          and safe practices — designed to help you make informed decisions.
+          Clear, science-backed guidance on cold therapy —
+          so you can recover smarter and safer.
         </p>
       </section>
 
-      {/* What is Cold Therapy */}
+      {/* WHAT IS COLD THERAPY */}
       <section className="content-section">
         <h2>What Is Cold Therapy?</h2>
+
         <p>
-          Cold therapy, also known as cryotherapy, is the controlled exposure
-          of the body to cold temperatures to support recovery, reduce inflammation,
-          and enhance mental resilience. Ice baths are one of the most widely
-          studied and accessible forms of cold therapy.
+          Cold therapy (cryotherapy) is the controlled exposure to cold
+          temperatures to support recovery, reduce inflammation, and
+          strengthen mental resilience.
         </p>
+
         <p>
-          When the body is exposed to cold water, blood vessels constrict,
-          helping limit inflammation and muscle soreness. Once the body
-          rewarms, circulation increases — delivering oxygen and nutrients
-          to recovering tissues.
+          Ice baths are one of the most effective and accessible forms
+          of cold therapy.
         </p>
+
+        <ul>
+          <li>Cold constricts blood vessels, reducing inflammation</li>
+          <li>Rewarming boosts circulation and oxygen delivery</li>
+          <li>The nervous system shifts into a calmer, regulated state</li>
+        </ul>
       </section>
 
-      {/* Science Behind Ice Baths */}
+      {/* SCIENCE */}
       <section className="content-section">
         <h2>Science Behind Ice Baths</h2>
+
         <p>
-          Research suggests cold water immersion may help reduce delayed-onset
-          muscle soreness (DOMS), improve perceived recovery, and support
-          nervous system regulation.
+          Research suggests cold water immersion can support recovery
+          and nervous system balance when used responsibly.
         </p>
+
         <ul>
-          <li>Reduced inflammation through vasoconstriction</li>
-          <li>Improved circulation during rewarming phase</li>
-          <li>Activation of the parasympathetic nervous system</li>
-          <li>Potential mental resilience benefits through stress adaptation</li>
+          <li>Reduced muscle soreness (DOMS)</li>
+          <li>Improved circulation during rewarming</li>
+          <li>Activation of the parasympathetic “rest & recover” system</li>
+          <li>Improved stress tolerance over time</li>
         </ul>
-        <p>
-          While results vary by individual and protocol, consistent and
-          responsible use is key to maximizing benefits.
+
+        <p className="note">
+          Results vary by individual — consistency and moderation matter most.
         </p>
       </section>
 
-      {/* Heat vs Cold Therapy */}
+      {/* HEAT VS COLD */}
       <section className="content-section">
         <h2>Heat vs Cold Therapy</h2>
+
         <p>
-          Both heat and cold therapy serve valuable but different purposes.
-          Choosing the right method depends on your recovery goals.
+          Both heat and cold therapy are useful. The key is choosing
+          the right method at the right time.
         </p>
 
         <div className="comparison-grid">
           <div className="comparison-card">
             <h3>Cold Therapy</h3>
             <p>
-              Best suited for acute inflammation, post-exercise recovery,
+              Best for post-exercise recovery, inflammation,
               and nervous system regulation.
             </p>
           </div>
@@ -69,58 +78,69 @@ export default function Awareness() {
           <div className="comparison-card">
             <h3>Heat Therapy</h3>
             <p>
-              Often used for muscle relaxation, chronic stiffness,
-              and increasing tissue elasticity.
+              Ideal for muscle relaxation, chronic stiffness,
+              and improving mobility.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Who Should Avoid */}
+      {/* WHO SHOULD AVOID */}
       <section className="content-section disclaimer">
         <h2>Who Should Avoid Ice Baths?</h2>
-        <p>
-          Cold immersion is not suitable for everyone. Individuals with
-          cardiovascular conditions, Raynaud’s disease, uncontrolled
-          hypertension, or nerve disorders should consult a medical
-          professional before use.
-        </p>
+
+        <p>Cold immersion may not be suitable if you have:</p>
+
+        <ul>
+          <li>Cardiovascular conditions</li>
+          <li>Raynaud’s disease</li>
+          <li>Uncontrolled blood pressure</li>
+          <li>Nerve-related disorders</li>
+        </ul>
+
         <p className="medical-note">
-          <strong>Medical Disclaimer:</strong> The information provided on this
-          page is for educational purposes only and is not a substitute for
-          professional medical advice. Always consult a qualified healthcare
-          provider before beginning cold therapy.
+          <strong>Medical Disclaimer:</strong> This content is for educational
+          purposes only and does not replace professional medical advice.
         </p>
       </section>
 
-      {/* Myths & Facts */}
-      <section className="content-section">
+      {/* MYTHS & FACTS */}
+      <section className="content-section myths-section">
         <h2>Recovery Myths & Facts</h2>
 
-        <div className="myth">
-          <h4>Myth: Longer ice baths are always better</h4>
-          <p>
-            <strong>Fact:</strong> Short, controlled exposure is often more
-            effective and safer than prolonged sessions.
-          </p>
-        </div>
+        <div className="myth-grid">
+          <div className="myth-card">
+            <h4>Myth</h4>
+            <p>Longer ice baths are always better</p>
+            <span>Fact</span>
+            <p>Short, controlled exposure is safer and more effective</p>
+          </div>
 
-        <div className="myth">
-          <h4>Myth: Ice baths replace proper recovery</h4>
-          <p>
-            <strong>Fact:</strong> Cold therapy complements sleep, nutrition,
-            and active recovery — it does not replace them.
-          </p>
-        </div>
+          <div className="myth-card">
+            <h4>Myth</h4>
+            <p>Ice baths replace proper recovery</p>
+            <span>Fact</span>
+            <p>They complement sleep, nutrition, and active recovery</p>
+          </div>
 
-        <div className="myth">
-          <h4>Myth: Ice baths eliminate all inflammation</h4>
-          <p>
-            <strong>Fact:</strong> Some inflammation is necessary for adaptation.
-            Cold therapy should be used strategically.
-          </p>
+          <div className="myth-card">
+            <h4>Myth</h4>
+            <p>Ice baths eliminate all inflammation</p>
+            <span>Fact</span>
+            <p>Some inflammation is necessary for adaptation</p>
+          </div>
         </div>
       </section>
+
+
+      {/* MICRO CTA */}
+      <section className="content-section micro-cta">
+        <h3>Experience guided recovery, the right way</h3>
+        <Link to="/services" className="cta-link">
+          Explore our recovery services →
+        </Link>
+      </section>
+
     </main>
   );
 }
