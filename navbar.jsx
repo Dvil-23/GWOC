@@ -10,7 +10,7 @@ export default function Navbar() {
                 </div>
 
                 <div className="nav-links">
-                    <NavLink to="/home" className="nav-link">
+                    <NavLink to="/" className="nav-link">
                         Home
                     </NavLink>
                     <NavLink to="/awareness" className="nav-link">
@@ -18,6 +18,9 @@ export default function Navbar() {
                     </NavLink>
                     <NavLink to="/services" className="nav-link">
                         Services
+                    </NavLink>
+                    <NavLink to="/booking" className="nav-link">
+                        Book Now
                     </NavLink>
                 </div>
             </div>
