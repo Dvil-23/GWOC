@@ -9,7 +9,7 @@
   color: #0f172a;
 }
 
-/* Hero */
+/*--------Hero---------*/
 .hero {
   position: relative;
   padding: 6rem 1.5rem;
@@ -600,6 +600,7 @@
     opacity: 0;
     transform: translateY(12px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -688,11 +689,9 @@
 
 .micro-cta {
   text-align: center;
-  background: linear-gradient(
-    to bottom,
-    white,
-    var(--accent-soft)
-  );
+  background: linear-gradient(to bottom,
+      white,
+      var(--accent-soft));
 }
 
 .micro-cta h3 {
@@ -705,6 +704,104 @@
   border: 1px solid rgba(15, 23, 42, 0.05);
 }
 
-/*======================
-  END AWARENESS
-  ======================*/
+/*======================END AWARENESS======================*/
+
+/* =====================
+   SERVICES PAGE COLORS
+   ===================== */
+
+.service-detail {
+  padding: 4.5rem 3.5rem;
+  border-radius: 28px;
+  margin-bottom: 5rem;
+}
+
+/* Ice Bath */
+.service-ice {
+  background: linear-gradient(to bottom right,
+      #e6f2fb,
+      #ffffff);
+}
+
+/* Jacuzzi */
+.service-jacuzzi {
+  background: linear-gradient(to bottom right,
+      #fff4e6,
+      #ffffff);
+}
+
+/* Steam */
+.service-steam {
+  background: linear-gradient(to bottom right,
+      #f1f5f9,
+      #ffffff);
+}
+
+.service-meta {
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.service-text .btn {
+  margin-top: 1.5rem;
+}
+
+.media-placeholder {
+  border-radius: 28px;
+  background: linear-gradient(to bottom,
+      #e6f2fb,
+      #f8fafc);
+  font-size: 0.95rem;
+}
+
+.service-text .btn,
+.combo-card .btn {
+  box-shadow: 0 14px 30px rgba(11, 94, 215, 0.18);
+}
+
+.combo-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.combo-card .btn {
+  margin-top: auto;
+}
+
+.combo-card .price-new {
+  margin-bottom: 2.5rem;
+}
+
+.combo-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.combo-price {
+  margin-top: auto;
+  text-align: center;
+}
+
+.combo-card .btn {
+  margin-top: 2rem;
+}
+
+.price-old {
+  margin-bottom: 0.3rem;
+}
+
+.price-new {
+  margin-bottom: 0;
+}
+
+/*======================END SERVICES PAGE COLORS======================*/
+
+.selected-note {
+  font-size: 0.9rem;
+  color: #475569;
+  margin-top: 0.5rem;
+}
+
+/*======================END BOOKING PAGE======================*/
