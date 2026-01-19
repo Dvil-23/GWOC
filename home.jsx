@@ -1,4 +1,4 @@
-import "./App.css";
+/*import "./App.css";
 import { Link } from "react-router-dom";
 
 export default function Home() {
@@ -6,6 +6,7 @@ export default function Home() {
         <div className="page">
 
             {/* HERO */}
+/*
             <header className="hero">
                 <div className="glass-card hero-glass">
                     <div className="hero-content">
@@ -32,6 +33,7 @@ export default function Home() {
             </header>
 
             {/* SERVICES PREVIEW */}
+/*
             <section className="services-preview">
                 <h2>Our Recovery Services</h2>
 
@@ -63,7 +65,7 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* WHY CHILL THRIVE */}
+            {/* WHY CHILL THRIVE */}/*
             <section className="why-section">
                 <h2>Why Chill Thrive</h2>
 
@@ -102,7 +104,7 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* TESTIMONIALS PREVIEW */}
+            {/* TESTIMONIALS PREVIEW */}/*
             <section className="testimonials-preview">
                 <h2>What Our Members Say</h2>
 
@@ -129,7 +131,7 @@ export default function Home() {
                 </Link>
             </section>
 
-            {/* FINAL CTA */}
+            {/* FINAL CTA */}/*
             <section className="final-cta">
                 <h2>Start Your Recovery Journey Today</h2>
                 <button className="btn btn-primary">Book Your First Session</button>
@@ -137,4 +139,74 @@ export default function Home() {
 
         </div>
     );
+}*/
+
+import "../App.css";
+import ServicePreview from "./Service_preview";
+import { motion } from "framer-motion";
+import GuidedPause from "./GuidedPause";
+
+
+const items = [
+  {
+    title: "Science-Backed Recovery",
+    desc: "Evidence-led therapies for real results",
+    icon: "🧬",
+    pos: "one",
+  },
+  {
+    title: "Trained Professionals",
+    desc: "Guided by certified wellness experts",
+    icon: "👤",
+    pos: "two",
+  },
+  {
+    title: "Hygienic & Premium Setup",
+    desc: "Clean, safe, spa-grade environment",
+    icon: "🛁",
+    pos: "three",
+  },
+  {
+    title: "Community-Driven Wellness",
+    desc: "Heal, grow, and thrive together",
+    icon: "💜",
+    pos: "four",
+  },
+];
+
+export default function Home() {
+  return (
+    <>
+<GuidedPause></GuidedPause>
+    <section className="why-wrap"id="why-chill-thrive">
+      <h2 className="why-title">Why Chill Thrive</h2>
+
+      <div className="why-field">
+        {items.map((it, i) => (
+          <div className={`why-item ${it.pos}`}>
+  <motion.div
+    className="why-inner"
+    initial={{ opacity: 0, y: 30 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ delay: i * 0.15, duration: 0.6 }}
+    viewport={{ once: true }}
+    whileHover={{ y: -6 }}
+  >
+    <div className="why-icon">
+      <span>{it.icon}</span>
+    </div>
+
+    <h3>{it.title}</h3>
+    <p>{it.desc}</p>
+  </motion.div>
+</div>
+
+        ))}
+      </div>
+    </section>
+     <ServicePreview></ServicePreview>
+    </>
+  );
 }
+
+
