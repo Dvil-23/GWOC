@@ -5,8 +5,7 @@ export default function Home() {
     return (
         <div className="page">
 
-            {/* HERO */}
-/*
+
             <header className="hero">
                 <div className="glass-card hero-glass">
                     <div className="hero-content">
@@ -32,7 +31,6 @@ export default function Home() {
                 </div>
             </header>
 
-            {/* SERVICES PREVIEW */}
 /*
             <section className="services-preview">
                 <h2>Our Recovery Services</h2>
@@ -65,7 +63,6 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* WHY CHILL THRIVE */}/*
             <section className="why-section">
                 <h2>Why Chill Thrive</h2>
 
@@ -104,7 +101,6 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* TESTIMONIALS PREVIEW */}/*
             <section className="testimonials-preview">
                 <h2>What Our Members Say</h2>
 
@@ -131,7 +127,7 @@ export default function Home() {
                 </Link>
             </section>
 
-            {/* FINAL CTA */}/*
+
             <section className="final-cta">
                 <h2>Start Your Recovery Journey Today</h2>
                 <button className="btn btn-primary">Book Your First Session</button>
