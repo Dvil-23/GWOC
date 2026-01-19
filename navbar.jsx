@@ -106,13 +106,8 @@ function Header() {
         open={openAuth}
         onClose={() => setOpenAuth(false)}
       />
-
 </Box>
-
       </div>
-
-      
-
       <div className="homepg"></div>
     </>
   );
