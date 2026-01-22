@@ -3,3 +3,4 @@ chill_thrive.db
 __pycache__/
 *.pyc
 .env
+*.mp4
