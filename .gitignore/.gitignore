@@ -1,5 +1,5 @@
 venv/
+chill_thrive.db
 __pycache__/
 *.pyc
-chill_thrive.db
 .env
