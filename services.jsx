@@ -1,4 +1,6 @@
 import "./App.css";
+import { Link } from "react-router-dom";
+
 
 export default function Services() {
   return (
@@ -14,7 +16,7 @@ export default function Services() {
       </section>
 
       {/* ICE BATH */}
-      <section className="service-detail">
+      <section className="service-detail service-ice">
         <div className="service-text">
           <h2>Ice Bath Therapy</h2>
           <p>
@@ -30,10 +32,14 @@ export default function Services() {
             <li>Stress regulation</li>
           </ul>
 
-          <p><strong>Duration:</strong> 30 min / 60 min</p>
-          <p><strong>Price:</strong> ₹XXX / session</p>
+          <div className="service-meta">
+            <p><strong>Duration:</strong> 30 min / 60 min</p>
+            <p><strong>Price:</strong> ₹XXX / session</p>
+          </div>
 
-          <button className="btn btn-primary">Book Now</button>
+          <Link to="/booking" state={{ service: "Ice Bath Therapy" }} className="btn btn-primary">
+            Book Now
+          </Link>
         </div>
 
         <div className="service-media">
@@ -42,7 +48,7 @@ export default function Services() {
       </section>
 
       {/* JACUZZI */}
-      <section className="service-detail reverse">
+      <section className="service-detail service-jacuzzi reverse">
         <div className="service-text">
           <h2>Jacuzzi Therapy</h2>
           <p>
@@ -57,10 +63,14 @@ export default function Services() {
             <li>Stress relief</li>
           </ul>
 
-          <p><strong>Duration:</strong> 30 min</p>
-          <p><strong>Price:</strong> ₹XXX / session</p>
+          <div className="service-meta">
+            <p><strong>Duration:</strong> 30 min / 60 min</p>
+            <p><strong>Price:</strong> ₹XXX / session</p>
+          </div>
 
-          <button className="btn btn-primary">Book Now</button>
+          <Link to="/booking" state={{ service: "Jacuzzi Therapy" }} className="btn btn-primary">
+            Book Now
+          </Link>
         </div>
 
         <div className="service-media">
@@ -69,7 +79,7 @@ export default function Services() {
       </section>
 
       {/* STEAM */}
-      <section className="service-detail">
+      <section className="service-detail service-steam">
         <div className="service-text">
           <h2>Steam Bath</h2>
           <p>
@@ -84,10 +94,14 @@ export default function Services() {
             <li>Mental relaxation</li>
           </ul>
 
-          <p><strong>Duration:</strong> 20–30 min</p>
-          <p><strong>Price:</strong> ₹XXX / session</p>
+          <div className="service-meta">
+            <p><strong>Duration:</strong> 30 min / 60 min</p>
+            <p><strong>Price:</strong> ₹XXX / session</p>
+          </div>
 
-          <button className="btn btn-primary">Book Now</button>
+          <Link to="/booking" state={{ service: "Steam Bath" }} className="btn btn-primary">
+            Book Now
+          </Link>
         </div>
 
         <div className="service-media">
@@ -105,17 +119,27 @@ export default function Services() {
             <span className="badge">Popular</span>
             <h3>Ice Bath + Steam</h3>
             <p>Time Included: 60 min</p>
-            <p className="price-old">₹XXXX</p>
-            <p className="price-new">₹XXXX</p>
-            <button className="btn btn-primary">Book Now</button>
+            <div className="combo-price">
+              <p className="price-old">₹XXXX</p>
+              <p className="price-new">₹XXXX</p>
+            </div>
+
+            <Link to="/booking" state={{ service: "Ice Bath + Steam" }} className="btn btn-primary">
+              Book Now
+            </Link>
           </div>
 
           <div className="combo-card">
             <h3>Ice Bath + Jacuzzi</h3>
             <p>Time Included: 60 min</p>
-            <p className="price-old">₹XXXX</p>
-            <p className="price-new">₹XXXX</p>
-            <button className="btn btn-primary">Book Now</button>
+            <div className="combo-price">
+              <p className="price-old">₹XXXX</p>
+              <p className="price-new">₹XXXX</p>
+            </div>
+
+            <Link to="/booking" state={{ service: "Ice Bath + Jacuzzi" }} className="btn btn-primary">
+              Book Now
+            </Link>
           </div>
 
           <div className="combo-card best">
@@ -123,9 +147,14 @@ export default function Services() {
             <h3>Full Recovery Combo</h3>
             <p>Ice Bath + Steam + Jacuzzi</p>
             <p>Time Included: 90 min</p>
-            <p className="price-old">₹XXXX</p>
-            <p className="price-new">₹XXXX</p>
-            <button className="btn btn-primary">Book Now</button>
+            <div className="combo-price">
+              <p className="price-old">₹XXXX</p>
+              <p className="price-new">₹XXXX</p>
+            </div>
+
+            <Link to="/booking" state={{ service: "Full Recovery Combo" }} className="btn btn-primary">
+              Book Now
+            </Link>
           </div>
 
         </div>
