@@ -1,0 +1,70 @@
+.admin-layout {
+  display: flex;
+  min-height: 100vh;
+  background: #f1f5f9;
+}
+
+.sidebar {
+  width: 230px;
+  background: white;
+  padding: 2rem;
+  border-right: 1px solid #e5e7eb;
+}
+
+.sidebar a {
+  display: block;
+  margin-bottom: 1rem;
+  color: #334155;
+  text-decoration: none;
+}
+
+.sidebar a.active {
+  color: #0b5ed7;
+}
+
+.admin-main {
+  flex: 1;
+  padding: 2.5rem;
+}
+
+.admin-header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 2rem;
+  color: #475569;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.card {
+  background: white;
+  padding: 2rem;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+table {
+  width: 100%;
+  background: white;
+  border-radius: 12px;
+}
+
+th, td {
+  padding: 0.8rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+button.danger {
+  background: #ef4444;
+  color: white;
+}
